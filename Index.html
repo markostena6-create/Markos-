@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Markos Tena | Portfolio</title>
+<style>
+:root {
+  --bg-color: #f4f4f4;
+  --text-color: #333;
+  --desc-bg: #fff;
+  --desc-border: #00f;
+  --shadow-color: #00f;
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+  background: var(--bg-color);
+  color: var(--text-color);
+  transition: 0.5s;
+}
+
+body.dark {
+  --bg-color: #121212;
+  --text-color: white;
+  --desc-bg: #1f1f1f;
+  --desc-border: #0ff;
+  --shadow-color: #0ff;
+}
+
+/* NAVIGATION */
+nav{
+  background:#222;
+  padding:15px;
+  text-align:center;
+}
+nav a{
+  color:white;
+  margin:10px;
+  text-decoration:none;
+  font-weight:bold;
+}
+nav a:hover{ color:yellow; }
+button.toggle{
+  padding:8px 15px;
+  cursor:pointer;
+  background:#4CAF50;
+  border:none;
+  color:white;
+  border-radius:5px;
+  position:fixed;
+  top:15px;
+  right:15px;
+  z-index:100;
+}
+
+/* SECTIONS */
+section{
+  padding:60px;
+  border-bottom:2px solid #ccc;
+}
+
+/* FLEX CONTAINER */
+.container{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:40px;
+  flex-wrap:wrap;
+}
+
+/* IMAGES */
+img{
+  width:200px;
+  border-radius:10px;
+  box-shadow:0 0 15px var(--shadow-color);
+  transition:0.5s;
+}
+
+/* DESCRIPTION BOX */
+.desc{
+  border:2px solid var(--desc-border);
+  background: var(--desc-bg);
+  padding:20px;
+  border-radius:10px;
+  box-shadow:0 0 20px var(--shadow-color);
+  max-width:450px;
+  transition:0.5s;
+}
+
+/* PROJECTS */
+.project{
+  margin:30px 0;
+  padding:20px;
+  border:2px solid var(--desc-border);
+  border-radius:10px;
+  box-shadow:0 0 20px var(--shadow-color);
+}
+.project img{
+  width:180px;
+  margin-bottom:10px;
+}
+
+/* GLOW TITLES */
+h1,h2,h3{
+  text-align:center;
+  color:var(--shadow-color);
+  text-shadow:0 0 10px var(--shadow-color),0 0 20px var(--shadow-color),0 0 30px #0ff;
+}
+
+/* CONTACT LINKS */
+.contact-links{
+  display:flex;
+  gap:15px;
+  flex-wrap:wrap;
+  justify-content:center;
+  margin-top:15px;
+}
+.contact-links a{
+  text-decoration:none;
+  color:white;
+  background:#4CAF50;
+  padding:10px 15px;
+  border-radius:8px;
+  box-shadow:0 0 10px #0ff,0 0 15px var(--shadow-color);
+  transition:0.3s;
+}
+.contact-links a:hover{
+  transform:scale(1.1);
+  box-shadow:0 0 15px #ff0,0 0 25px #0ff;
+}
+</style>
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+  <button class="toggle" onclick="toggleDark()">Dark / Light</button>
+</nav>
+
+<!-- HOME -->
+<section id="home">
+  <h1>Welcome To Markos Portfolio</h1>
+  <div class="container">
+    <img src="1772734651538.png">
+    <div class="desc">
+      <p>Hello! I am <b>Markos Tena</b>, a third-year Computer Science student.</p>
+      <p>I grew up in a rural area, helping my family with farming and keeping livestock, which taught me hard work, responsibility, and problem-solving from an early age.</p>
+      <p>This portfolio highlights my programming skills, projects, and my journey from a rural background to becoming a motivated software developer.</p>
+      <p>I enjoy building systems, solving real-world problems, learning new technologies, and creating practical solutions for businesses and individuals.</p>
+      <p>My goal is to become a professional software developer and contribute innovative solutions that make a difference in society.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2>About Me</h2>
+  <div class="container">
+    <img src="1772738744629.png">
+    <div class="desc">
+      <p>I am a child from a rural area who grew up helping with farming and taking care of livestock. This background taught me discipline, patience, and practical problem-solving skills.</p>
+      <p>Alongside my rural upbringing, I developed a passion for technology and programming. I enjoy creating websites, software applications, and tools that can solve real-world problems efficiently.</p>
+      <p>My interests include web development, databases, software engineering, and exploring new programming languages and frameworks.</p>
+      <p>I strongly believe in continuous learning and practice, which is why I dedicate time to coding projects, learning advanced concepts, and improving my problem-solving abilities every day.</p>
+      <p>I am also motivated by teamwork and collaboration, often working on projects that combine creativity, technical skills, and practical implementation.</p>
+      <p>Through my portfolio, I want to show my journey from a rural environment to becoming a dedicated, self-driven computer science student ready to take on professional challenges.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <h2>Courses & Skills</h2>
+  <div class="container">
+    <img src="1772734817350.png">
+    <div class="desc">
+      <p><b>Python:</b> Backend development, automation, data analysis, and problem solving.</p>
+      <p><b>Java:</b> Object-oriented programming, desktop applications, and algorithms.</p>
+      <p><b>HTML & CSS:</b> Responsive website design, Flexbox, Grid, and user-friendly interfaces.</p>
+      <p><b>SQL:</b> Database design, management, queries, and reporting.</p>
+      <p><b>Additional Skills:</b> Git/GitHub for version control, debugging, teamwork, and learning new frameworks.</p>
+      <p>I always focus on building real-world projects that improve my coding skills and prepare me for professional software development challenges.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <h2>Projects</h2>
+
+  <!-- MOVIE TICKET -->
+  <div class="project container">
+    <img src="745c9b06-af55-4510-836d-9a320a3f26f9.jpg">
+    <div class="desc">
+      <h3>Online Movie Ticket Booking System</h3>
+      <p><b>Description:</b> Users can book movie tickets online by selecting movies, seats, and confirming payments.</p>
+      <p><b>Features:</b> Seat selection, payment confirmation, booking history, and admin management for movies and schedules.</p>
+      <p><b>Technologies:</b> HTML, CSS, JavaScript, PHP, MySQL.</p>
+    </div>
+  </div>
+
+  <!-- CLOCK -->
+  <div class="project container">
+    <img src="44348fa445b751eb35699c5b5d4975bc.jpg">
+    <div class="desc">
+      <h3>Real-Time Clock Project</h3>
+      <p><b>Description:</b> Displays the current time in real-time using JavaScript, updating every second.</p>
+      <p><b>Features:</b> Live digital display, responsive design, easy integration into websites.</p>
+      <p><b>Technologies:</b> HTML, CSS, JavaScript.</p>
+      <h3 id="clock"></h3>
+    </div>
+  </div>
+
+  <!-- PHONE CONTACT -->
+  <div class="project container">
+    <img src="contact-us-woman-hand-phone-web-page-concept-banner-poster-template-holding-modern-flat-vector-illustration-design-162225614.jpg">
+    <div class="desc">
+      <h3>Phone & Contact Information</h3>
+      <p><b>Description:</b> Provides easy access to my phone, email, and messaging apps for inquiries or collaboration.</p>
+      <p><b>Features:</b> Clickable links to Telegram, WhatsApp, IMO, Messenger, Facebook, and Email.</p>
+      <p><b>Technologies:</b> HTML, CSS.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact Me</h2>
+  <div class="container">
+    <img src="1772738699994.png">
+    <div class="desc">
+      <p><b>Contact Information:</b> You can reach me via messaging apps, social media, or email. Click the buttons to open the respective apps.</p>
+      <div class="contact-links">
+        <a href="tg://resolve?domain=markostena" target="_blank">Telegram +251982765582</a>
+        <a href="https://wa.me/251982765582" target="_blank">WhatsApp +251982765582</a>
+        <a href="im://251982765582" target="_blank">IMO +251982765582</a>
+        <a href="fb-messenger://user-thread/MarkosTena" target="_blank">Messenger Markos Tena</a>
+        <a href="fb://profile/MarkosTena" target="_blank">Facebook Markos Tena</a>
+        <a href="mailto:markostena6@gmail.com">Email markostena6@gmail.com</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>© 2026 Markos Tena</footer>
+
+<script>
+// Dark / Light toggle
+function toggleDark(){ 
+    document.body.classList.toggle("dark"); 
+}
+
+// Clock function
+function updateClock(){  
+  let now = new Date();  
+  document.getElementById("clock").innerHTML = now.toLocaleTimeString();  
+}
+setInterval(updateClock, 1000);
+
+// Ensure light mode on load
+document.addEventListener("DOMContentLoaded",()=>{
+    document.body.classList.remove("dark");
+});
+</script>
+
+</body>
+</html>
